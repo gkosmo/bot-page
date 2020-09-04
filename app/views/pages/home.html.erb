@@ -1,2 +1,11 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+<div class="card card-light" data-controller="bot">
+  <div data-target="bot.answer">
+  </div>
+  <div class="card-body" data-target="messages">
+    <%= text_field_tag :message_to_bot, nil, class: "form-control", data: { target: "bot.input"} %>
+    <%= button_tag :ask, data: { action: "bot#send"} %>
+  </div>
+</div>

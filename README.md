@@ -1,1 +1,24 @@
 Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+ ---- on Home Page
+      -> tiny window with input
+         - bootstrap cards
+      -> user type in Question/Comment
+         - text field tag
+         - stimulus event
+         - fetch
+      -> question is first received by server
+         - routes
+         - controller#action
+      -> interpreted w/ external service
+        -  API token need to be set
+        -  Service class for call
+        -  method takes param message
+        -  Api call
+      -> answer built on the interpretation
+        -  Api request-response
+        -  Parse response
+        -  Conditionned message reply
+      -> answer is return to the window as message
+        - controller variable of message from service
+        - is used in partial
+        - return json partial

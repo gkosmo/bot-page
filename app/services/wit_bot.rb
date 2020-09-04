@@ -27,7 +27,6 @@ class WitBot
 
 
   def temperature_get_answer(response)
-    p response
     answer = "I'm not a sorcerer --"
     if !response['entities'].nil?
       p response['entities']
